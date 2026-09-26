@@ -67,13 +67,6 @@ venv/
 .venv/
 env/
 
-# AI Agents, Tools & Scratch Dirs
-.claude/
-.codex_tmp_*/
-.mnemosyne/
-.tools/
-.video-review/
-
 # OS Specific
 .DS_Store
 .DS_Store?
