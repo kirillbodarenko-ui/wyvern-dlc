@@ -1,0 +1,33 @@
+services:
+  auth:
+    build: .
+    restart: unless-stopped
+    environment:
+      AUTH_BIND: 0.0.0.0
+      AUTH_PORT: 8787
+      AUTH_DB: /data/licenses.db
+      AUTH_TOKEN_SECRET: ${AUTH_TOKEN_SECRET}
+      AUTH_CLIENT_VERSION: 0.1-recode
+      AUTH_SUPPORT_URL: https://funpay.com/users/21337436/
+    volumes:
+      - auth-data:/data
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      AUTH_DOMAIN: ${AUTH_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - auth
+
+volumes:
+  auth-data:
+  caddy-data:
+  caddy-config:

@@ -1,0 +1,49 @@
+accessWidener	v2	official
+accessible	class	net/minecraft/client/gui/GuiGraphicsExtractor$ScissorStack
+accessible	field	net/minecraft/client/gui/components/BossHealthOverlay	events	Ljava/util/Map;
+accessible	field	net/minecraft/client/gui/components/PlayerTabOverlay	healthStates	Ljava/util/Map;
+accessible	class	net/minecraft/client/gui/components/PlayerTabOverlay$ScoreDisplayEntry
+accessible	method	net/minecraft/client/gui/components/PlayerTabOverlay$ScoreDisplayEntry	<init>	(Lnet/minecraft/network/chat/Component;ILnet/minecraft/network/chat/Component;I)V
+accessible	method	net/minecraft/client/gui/components/PlayerTabOverlay	extractPingIcon	(Lnet/minecraft/client/gui/GuiGraphicsExtractor;IIILnet/minecraft/client/multiplayer/PlayerInfo;)V
+accessible	method	net/minecraft/client/gui/components/PlayerTabOverlay	extractTablistScore	(Lnet/minecraft/world/scores/Objective;ILnet/minecraft/client/gui/components/PlayerTabOverlay$ScoreDisplayEntry;IILjava/util/UUID;Lnet/minecraft/client/gui/GuiGraphicsExtractor;)V
+accessible	field	net/minecraft/client/gui/components/PlayerTabOverlay	footer	Lnet/minecraft/network/chat/Component;
+accessible	field	net/minecraft/client/gui/components/PlayerTabOverlay	header	Lnet/minecraft/network/chat/Component;
+accessible	field	net/minecraft/client/player/LocalPlayer	xRotLast	F
+accessible	method	net/minecraft/client/gui/components/PlayerTabOverlay	getPlayerInfos	()Ljava/util/List;
+accessible	field	net/minecraft/client/player/LocalPlayer	lastOnGround	Z
+accessible	class	net/minecraft/world/item/ItemCooldowns$CooldownInstance
+accessible	field	net/minecraft/world/item/ItemCooldowns	cooldowns	Ljava/util/Map;
+accessible	field	net/minecraft/world/item/ItemCooldowns	tickCount	I
+accessible	field	net/minecraft/world/item/ItemCooldowns$CooldownInstance	endTime	I
+accessible	field	net/minecraft/network/protocol/game/ServerboundUseItemPacket	yRot	F
+accessible	field	net/minecraft/network/protocol/game/ServerboundUseItemPacket	xRot	F
+mutable	field	net/minecraft/network/protocol/game/ServerboundUseItemPacket	yRot	F
+mutable	field	net/minecraft/network/protocol/game/ServerboundUseItemPacket	xRot	F
+accessible	field	net/minecraft/client/player/LocalPlayer	yRotLast	F
+accessible	field	net/minecraft/world/entity/LivingEntity	noJumpDelay	I
+accessible	field	net/minecraft/client/MouseHandler	mouseGrabbed	Z
+accessible	field	net/minecraft/client/MouseHandler	xpos	D
+accessible	field	net/minecraft/client/MouseHandler	ypos	D
+accessible	field	net/minecraft/client/MouseHandler	ignoreFirstMove	Z
+accessible	field	net/minecraft/client/player/LocalPlayer	wasSprinting	Z
+accessible	method	net/minecraft/world/entity/Entity	getBlockSpeedFactor	()F
+accessible	method	net/minecraft/world/entity/Entity	getInputVector	(Lnet/minecraft/world/phys/Vec3;FF)Lnet/minecraft/world/phys/Vec3;
+accessible	field	net/minecraft/world/entity/Entity	dimensions	Lnet/minecraft/world/entity/EntityDimensions;
+accessible	field	net/minecraft/world/entity/LivingEntity	jumping	Z
+accessible	method	net/minecraft/world/entity/LivingEntity	getDamageAfterArmorAbsorb	(Lnet/minecraft/world/damagesource/DamageSource;F)F
+accessible	method	net/minecraft/world/entity/LivingEntity	getDamageAfterMagicAbsorb	(Lnet/minecraft/world/damagesource/DamageSource;F)F
+accessible	method	net/minecraft/world/entity/LivingEntity	calculateFallDamage	(DF)I
+accessible	method	net/minecraft/world/entity/LivingEntity	getJumpPower	()F
+accessible	method	net/minecraft/client/player/LocalPlayer	sendIsSprintingIfNeeded	()V
+accessible	method	net/minecraft/client/player/LocalPlayer	canStartSprinting	()Z
+accessible	class	net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection
+accessible	field	net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection	renderMainHand	Z
+accessible	field	net/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection	renderOffHand	Z
+accessible	method	net/minecraft/client/renderer/ItemInHandRenderer	evaluateWhichHandsToRender	(Lnet/minecraft/client/player/LocalPlayer;)Lnet/minecraft/client/renderer/ItemInHandRenderer$HandRenderSelection;
+accessible	field	net/minecraft/client/renderer/ItemInHandRenderer	oMainHandHeight	F
+accessible	field	net/minecraft/client/renderer/ItemInHandRenderer	mainHandHeight	F
+accessible	method	net/minecraft/world/entity/Entity	collideWithShapes	(Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Ljava/util/List;)Lnet/minecraft/world/phys/Vec3;
+accessible	method	net/minecraft/world/entity/Entity	collide	(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+accessible	method	net/minecraft/client/multiplayer/MultiPlayerGameMode	startPrediction	(Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/multiplayer/prediction/PredictiveAction;)V
+accessible	field	net/minecraft/world/entity/player/Inventory	selected	I
+mutable	field	net/minecraft/world/entity/player/Inventory	selected	I

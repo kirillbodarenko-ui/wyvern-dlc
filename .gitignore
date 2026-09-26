@@ -1,4 +1,4 @@
-# Secrets & Credentials
+﻿# Secrets & Credentials
 *.env
 *.env.*
 !*.env.example
@@ -43,7 +43,7 @@ remappedSrc/
 .classpath
 .factorypath
 
-# Logs & Output
+# Logs & Dumps
 *.log
 hs_err_pid*
 replay_pid*
@@ -51,6 +51,7 @@ build_output.txt
 build_full.txt
 compile.stdout.log
 compile.stderr.log
+*.tiny
 
 # Minecraft Runtime & Debug
 run/
@@ -67,6 +68,13 @@ venv/
 .venv/
 env/
 
+# AI Agents, Scratch & Local Tools
+.claude/
+.codex_tmp_*/
+.mnemosyne/
+.tools/
+.video-review/
+
 # OS Specific
 .DS_Store
 .DS_Store?
@@ -74,3 +82,5 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 Microsoft/
+
+.github/
